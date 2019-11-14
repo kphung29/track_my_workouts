@@ -1,7 +1,6 @@
-/* eslint-disable no-undef */
-import mongoose from "mongoose";
+const mongoose = require("mongoose");
 
-const userSchema = new Schema(
+const userSchema = mongoose.Schema(
   {
     username: {
       type: String,
