@@ -6,8 +6,10 @@ import React, { Component } from "react";
 
 export default class EditExercises extends Component {
   render() {
-    <div>
-      <p>This is EditExercises component!</p>
-    </div>;
+    return (
+      <div>
+        <p>This is EditExercises component!</p>
+      </div>
+    );
   }
 }

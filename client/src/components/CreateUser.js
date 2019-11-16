@@ -6,8 +6,10 @@ import React, { Component } from "react";
 
 export default class CreateUser extends Component {
   render() {
-    <div>
-      <p>This is CreateUser component!</p>
-    </div>;
+    return (
+      <div>
+        <p>This is CreateUser component!</p>
+      </div>
+    );
   }
 }
