@@ -6,8 +6,10 @@ import React, { Component } from "react";
 
 export default class CreateExercise extends Component {
   render() {
-    <div>
-      <p>This is CreateExercise component!</p>
-    </div>;
+    return (
+      <div>
+        <p>This is CreateExercise component!</p>
+      </div>
+    );
   }
 }

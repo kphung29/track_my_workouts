@@ -6,8 +6,10 @@ import React, { Component } from "react";
 
 export default class ExercisesList extends Component {
   render() {
-    <div>
-      <p>This is ExercisesList component!</p>
-    </div>;
+    return (
+      <div>
+        <p>This is ExercisesList component!</p>
+      </div>
+    );
   }
 }
