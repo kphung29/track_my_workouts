@@ -6,6 +6,7 @@
 /* eslint-disable react/require-render-return */
 /* eslint-disable react/prefer-stateless-function */
 import React, { Component } from "react";
+import axios from "axios";
 
 export default class CreateUser extends Component {
   constructor(props) {
@@ -30,7 +31,16 @@ export default class CreateUser extends Component {
 
     const { username } = this.state;
 
-    console.log(username);
+    const user = {
+      username
+    };
+
+    console.log(user);
+
+    axios
+      .post("http://localhost:4000/users/add", user)
+      .then(res => console.log(res.data))
+      .catch(err => console.log(err));
 
     this.setState({
       username: ""
