@@ -74,7 +74,7 @@ export default class CreateExercise extends Component {
   }
 
   render() {
-    const { username, users, duration, date } = this.state;
+    const { username, users, description, duration, date } = this.state;
     return (
       <div>
         <h3>Create New Exercise Log</h3>
@@ -94,6 +94,15 @@ export default class CreateExercise extends Component {
                 </option>
               ))}
             </select>
+          </div>
+          <div className="form-group">
+            <label>Description: </label>
+            <input
+              type="text"
+              className="form-control"
+              value={description}
+              onChange={this.onChangeDescription}
+            />
           </div>
           <div className="form-group">
             <label>Duration (in minutes): </label>
